@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5720b12c.css",
+    "main.css": "/portfolio/static/css/main.12a80c35.css",
     "main.js": "/portfolio/static/js/main.ac45f9b3.js",
     "static/js/787.fb771931.chunk.js": "/portfolio/static/js/787.fb771931.chunk.js",
-    "static/media/WithSetup.png": "/portfolio/static/media/WithSetup.b051d0727816ac0e9810.png",
-    "static/media/banner8.png": "/portfolio/static/media/banner8.a4a16e95356ab9f89ba4.png",
     "static/media/untitled2.png": "/portfolio/static/media/untitled2.ad63dbb89f2bdebf9b71.png",
     "static/media/Pic.png": "/portfolio/static/media/Pic.d114966790bb715937a0.png",
+    "static/media/banner8.jpg": "/portfolio/static/media/banner8.cc3e5d9baff9f6bbfd30.jpg",
     "static/media/Freelance.png": "/portfolio/static/media/Freelance.ae9111c70942ab06bb1f.png",
+    "static/media/WithSetup.jpg": "/portfolio/static/media/WithSetup.99ba99d52f5c3aa27fc5.jpg",
     "static/media/color-sharp.png": "/portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/XCode-Logo.png": "/portfolio/static/media/XCode-Logo.5ceb2afb13053aca44ed.png",
@@ -48,12 +48,12 @@
     "static/media/nav-icon1.svg": "/portfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/arrow2.svg": "/portfolio/static/media/arrow2.3d9522b6fd8f2464b7200ebf2c1bb09a.svg",
     "static/media/arrow1.svg": "/portfolio/static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
-    "main.5720b12c.css.map": "/portfolio/static/css/main.5720b12c.css.map",
+    "main.12a80c35.css.map": "/portfolio/static/css/main.12a80c35.css.map",
     "main.ac45f9b3.js.map": "/portfolio/static/js/main.ac45f9b3.js.map",
     "787.fb771931.chunk.js.map": "/portfolio/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5720b12c.css",
+    "static/css/main.12a80c35.css",
     "static/js/main.ac45f9b3.js"
   ]
 }
