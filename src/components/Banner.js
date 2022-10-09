@@ -13,7 +13,21 @@ export const Banner = () => {
   const [index, setIndex] = useState(1);
   const toRotate = [ " António Silva" ];
   const period = 2000;
+  const [width, setWidth] = useState(window.innerWidth);
+  const [height, setHeight] = useState(window.innerHeight);
 
+  function handleWindowSizeChange() {
+      setWidth(window.innerWidth);
+      setHeight(window.innerHeight);
+  }
+  useEffect(() => {
+      window.addEventListener('resize', handleWindowSizeChange);
+      return () => {
+          window.removeEventListener('resize', handleWindowSizeChange);
+      }
+  }, []);
+
+const isMobile = (width/height) <= 1;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -56,9 +70,9 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h1>I'm <span className="txt-rotate" dataPeriod="1000" ><span className="wrap">{text}</span></span></h1>
-                <span className="tagline">Software Engineer and CG Artist</span>
-                  <p>A deep passion for software and computer graphics born from video games led me to pursue both fields as a career and hobby. </p>
+                <h1 style={{fontSize:isMobile?"2.5rem":""}}>I'm <span className="txt-rotate" dataPeriod="1000" ><span style={{fontSize:isMobile?"2.5rem":""}} className="wrap">{text}</span></span></h1>
+                <span style={{fontSize:isMobile?"1rem":""}} className="tagline">Software Engineer and CG Artist</span>
+                  <p style={{fontSize:isMobile?"1rem":""}}>A deep passion for software and computer graphics born from video games led me to pursue both fields as a career and hobby. </p>
                   <button onClick={(e) => {e.preventDefault();window.location.href='https://www.linkedin.com/in/to-silva/'}}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
