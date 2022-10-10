@@ -1,5 +1,7 @@
 # Personal Portfolio Website in React
 
+Website is deployed via github pages in https://to-silva.github.io/portfolio/
+
 ### `npm start`
 
 Runs the app in the development mode.\
