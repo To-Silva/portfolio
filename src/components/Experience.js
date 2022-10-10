@@ -121,7 +121,7 @@ const isMobile = (width/height) <= 1;
                           }
                         </Col>
                         <Col style={{ marginLeft: -50}}>
-                        <h3 style={{fontSize: "1.4rem", textAlign: "left",marginBottom:50,marginLeft: 40,color:'rgb(245, 245, 245)'}}>Freelance/Personal Projects</h3>
+                        <h3 style={{fontSize: "1.4rem", textAlign: "left",marginBottom:50,marginLeft: isMobile? 200:40,color:'rgb(245, 245, 245)'}}>Freelance/Personal Projects</h3>
                         {
                             freelance.map((project, index) => {
                               return (
