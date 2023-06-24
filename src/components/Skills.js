@@ -41,10 +41,6 @@ const skills = [{
   value: 85,
 },
 {
-  name: "GLSL",
-  value: 80,
-},
-{
   name: "Javascript",
   value: 80,
 },
@@ -54,6 +50,10 @@ const skills = [{
 },
 {
   name: "Python",
+  value: 70,
+},
+{
+  name: "GLSL",
   value: 60,
 },
 {

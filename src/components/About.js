@@ -24,8 +24,24 @@ export const About = () => {
       }
   }, []);
 
-const isMobile = (width/height) <= 1;
+  function calculateAge(dateOfBirth) {
+    const today = new Date();
+    const birthDate = new Date(dateOfBirth);
+  
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+  
+    // If the birth month is ahead of the current month, reduce the age by 1
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+  
+    return age;
+  }
 
+
+const isMobile = (width/height) <= 1;
+  const dateOfBirth = '1996-06-27';
   return (
     <section className="contact" id="about">
         <div className="container">
@@ -50,7 +66,7 @@ const isMobile = (width/height) <= 1;
                               <li className="col-span-1 flex  items-start gap-x-2">
                                 <AiOutlineCalendar/>
                                 <span className="font-bold text-white">Age:</span>
-                                <span className="text-gray-300">26</span>
+                                <span className="text-gray-300">{calculateAge(dateOfBirth)}</span>
                               </li>
                               <li className="col-span-1 flex  items-start gap-x-2">
                                 <FaRegFlag/>
