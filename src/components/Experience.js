@@ -3,6 +3,7 @@ import { ProjectCard,ProjectCardSmall } from "./ProjectCard";
 import projImg1 from "../assets/img/Holotch-Logo.png";
 import projImg2 from "../assets/img/AirfieldCanada-Logo.png";
 import projImg3 from "../assets/img/Freelance.png";
+import projImg4 from "../assets/img/woven-logo-sm.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -39,12 +40,20 @@ const isMobile = (width/height) <= 1;
   const fulltime = [
     {
       title: "Holotch",
-      when: "2020-present",
+      when: "2020-2024",
       position:"Lead Computer Graphics Engineer",
       description: "Helped developing a state-of-the-art pipeline for hologram content creation and consumption.",
       description2: "Contributed in all areas of development, such as desktop apps (C++/C#), frontend (Javascript/threejs), backend (NodeJS/AWS) and iOS (Swift).",
       imgUrl: projImg1,
     },
+    {
+      title: "Woven by Toyota",
+      when: "2024-present",
+      position:"Computer Graphics Engineer",
+      description: "Helped developing a state-of-the-art avatar system for Woven City.",
+      description2: "Unity-side development (C#), and AI/training related development (Python/Pytorch).",
+      imgUrl: projImg4,
+    },    
   ];
 
   const freelance = [
